@@ -16,4 +16,5 @@ Puppet::Type.newtype(:droplet) do
       raise 'Droplet name should be a String' unless value.is_a? String
       raise 'Droplet must have a name' if value == ''
     end
+  end
 end
