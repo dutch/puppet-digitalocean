@@ -1,4 +1,4 @@
-require_relative '../../puppet_x/puppetlabs/digitalocean.rb'
+require 'puppet_x/puppetlabs/digitalocean.rb'
 
 Puppet::Type.type(:droplet).provide(:droplet_kit, parent: PuppetX::Puppetlabs::Digitalocean) do
   confine feature: :digitalocean
